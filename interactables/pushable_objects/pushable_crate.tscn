@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://yvx15mx06m2a"]
+
+[ext_resource type="Texture2D" uid="uid://d3bjy54xo50s6" path="res://art/objects/Wooden_Crate.png" id="1_n0mgt"]
+[ext_resource type="Script" path="res://interactables/pushable_objects/pushable_object.gd" id="1_rwbbe"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_pqewx"]
+friction = 0.5
+rough = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h7pax"]
+size = Vector2(58, 58)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_rug2b"]
+properties/0/path = NodePath(".:rotation")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:target_position")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kjhvr"]
+size = Vector2(70, 70)
+
+[node name="PushableCrate" type="RigidBody2D"]
+collision_layer = 16
+collision_mask = 19
+physics_material_override = SubResource("PhysicsMaterial_pqewx")
+script = ExtResource("1_rwbbe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_n0mgt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_h7pax")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_rug2b")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_kjhvr")

@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://b1m4826xpl5mi"]
+
+[ext_resource type="Script" path="res://interactables/key_door/key_door.gd" id="1_fewjf"]
+[ext_resource type="Texture2D" uid="uid://byfh8j7xdngv6" path="res://art/objects/Door_01.png" id="1_glo8c"]
+
+[sub_resource type="Gradient" id="Gradient_hg18b"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xfy0j"]
+gradient = SubResource("Gradient_hg18b")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_acqvr"]
+size = Vector2(95, 138)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_absv7"]
+properties/0/path = NodePath(".:is_open")
+properties/0/spawn = true
+properties/0/replication_mode = 2
+
+[node name="KeyDoor" type="Node2D" node_paths=PackedStringArray("door_open", "door_closed", "exit_area")]
+script = ExtResource("1_fewjf")
+door_open = NodePath("DoorOpen")
+door_closed = NodePath("DoorClosed")
+exit_area = NodePath("ExitArea")
+
+[node name="DoorClosed" type="Sprite2D" parent="."]
+z_index = -100
+position = Vector2(0, -70)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("1_glo8c")
+
+[node name="DoorOpen" type="Sprite2D" parent="."]
+visible = false
+z_index = -100
+position = Vector2(0, -65.5)
+scale = Vector2(0.275, 130)
+texture = SubResource("GradientTexture1D_xfy0j")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -69)
+shape = SubResource("RectangleShape2D_acqvr")
+
+[node name="ExitArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+position = Vector2(0, -69)
+shape = SubResource("RectangleShape2D_acqvr")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_absv7")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="ExitArea" to="." method="_on_exit_area_body_entered"]
+[connection signal="delta_synchronized" from="MultiplayerSynchronizer" to="." method="_on_multiplayer_synchronizer_delta_synchronized"]

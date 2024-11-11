@@ -1,0 +1,132 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgtir6u700co6"]
+
+[ext_resource type="Texture2D" uid="uid://bja0wl8tcw71c" path="res://art/backgrounds/background_01.png" id="1_pjlrk"]
+[ext_resource type="Script" path="res://levels/menu/menu.gd" id="1_wcmib"]
+[ext_resource type="Texture2D" uid="uid://bujx43rcy5b85" path="res://art/backgrounds/background_02.png" id="2_6nas6"]
+[ext_resource type="PackedScene" uid="uid://rd5dpiraw5pc" path="res://levels/level_01/level_01.tscn" id="2_0826y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f0mh0"]
+font_size = 64
+
+[node name="Menu" type="Node" node_paths=PackedStringArray("level_container", "ui", "leave_ui", "ip_line_edit", "status_label", "not_connected_hbox", "host_hbox")]
+script = ExtResource("1_wcmib")
+level_container = NodePath("Level")
+ui = NodePath("CanvasLayer/UI")
+leave_ui = NodePath("CanvasLayer/LeaveUI")
+ip_line_edit = NodePath("CanvasLayer/UI/NotConnectedHBox/IPLineEdit")
+status_label = NodePath("CanvasLayer/UI/StatusLabel")
+not_connected_hbox = NodePath("CanvasLayer/UI/NotConnectedHBox")
+host_hbox = NodePath("CanvasLayer/UI/HostHBox")
+level_scene = ExtResource("2_0826y")
+
+[node name="Level" type="Node" parent="."]
+
+[node name="LevelSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://levels/level_01/level_01.tscn")
+spawn_path = NodePath("../Level")
+spawn_limit = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundTrees" type="TextureRect" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_pjlrk")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="BackgroundHouses" type="TextureRect" parent="CanvasLayer/UI/BackgroundTrees"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6nas6")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="NotConnectedHBox" type="HBoxContainer" parent="CanvasLayer/UI"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 720.0
+offset_bottom = 62.0
+
+[node name="HostButton" type="Button" parent="CanvasLayer/UI/NotConnectedHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Host"
+
+[node name="JoinButton" type="Button" parent="CanvasLayer/UI/NotConnectedHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Join"
+
+[node name="IPLineEdit" type="LineEdit" parent="CanvasLayer/UI/NotConnectedHBox"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "127.0.0.1"
+placeholder_text = "Enter IP Address..."
+
+[node name="HostHBox" type="HBoxContainer" parent="CanvasLayer/UI"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 315.0
+offset_bottom = 62.0
+
+[node name="StartButton" type="Button" parent="CanvasLayer/UI/HostHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Start"
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer/UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_f0mh0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeaveUI" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LeaveHBox" type="HBoxContainer" parent="CanvasLayer/LeaveUI"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 315.0
+offset_bottom = 62.0
+
+[node name="LeaveButton" type="Button" parent="CanvasLayer/LeaveUI/LeaveHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Leave"
+
+[connection signal="pressed" from="CanvasLayer/UI/NotConnectedHBox/HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/NotConnectedHBox/JoinButton" to="." method="_on_join_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UI/HostHBox/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/LeaveUI/LeaveHBox/LeaveButton" to="." method="_on_leave_button_pressed"]

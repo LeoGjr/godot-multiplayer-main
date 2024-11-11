@@ -1,0 +1,293 @@
+[gd_resource type="SpriteFrames" load_steps=61 format=3 uid="uid://smhh0yf45aju"]
+
+[ext_resource type="Texture2D" uid="uid://ofpyis010ir" path="res://art/characters/knight/jump_start/0_Hell_Knight_Jump Start_000.png" id="1_j5saq"]
+[ext_resource type="Texture2D" uid="uid://b7ljrt23k28d0" path="res://art/characters/knight/jump_start/0_Hell_Knight_Jump Start_001.png" id="2_ydkti"]
+[ext_resource type="Texture2D" uid="uid://cy24bpw6wxfc3" path="res://art/characters/knight/jump_start/0_Hell_Knight_Jump Start_002.png" id="3_45xaf"]
+[ext_resource type="Texture2D" uid="uid://ldeglrgysffr" path="res://art/characters/knight/jump_start/0_Hell_Knight_Jump Start_003.png" id="4_so74t"]
+[ext_resource type="Texture2D" uid="uid://cpksabe0m2sdv" path="res://art/characters/knight/jump_start/0_Hell_Knight_Jump Start_004.png" id="5_du5xd"]
+[ext_resource type="Texture2D" uid="uid://cfcof4ly1bqls" path="res://art/characters/knight/jump_start/0_Hell_Knight_Jump Start_005.png" id="6_56txp"]
+[ext_resource type="Texture2D" uid="uid://dqdco8shdtfft" path="res://art/characters/knight/fall/0_Hell_Knight_Falling Down_000.png" id="7_7a6xe"]
+[ext_resource type="Texture2D" uid="uid://crgj87i5wo42c" path="res://art/characters/knight/fall/0_Hell_Knight_Falling Down_001.png" id="8_q48tn"]
+[ext_resource type="Texture2D" uid="uid://br4jtv1rj3egn" path="res://art/characters/knight/fall/0_Hell_Knight_Falling Down_002.png" id="9_wbjj5"]
+[ext_resource type="Texture2D" uid="uid://bv8jid72a0wy2" path="res://art/characters/knight/fall/0_Hell_Knight_Falling Down_003.png" id="10_07x5d"]
+[ext_resource type="Texture2D" uid="uid://sf7md85nk68g" path="res://art/characters/knight/fall/0_Hell_Knight_Falling Down_004.png" id="11_tw7is"]
+[ext_resource type="Texture2D" uid="uid://c4cna66s2ni38" path="res://art/characters/knight/fall/0_Hell_Knight_Falling Down_005.png" id="12_4vpmy"]
+[ext_resource type="Texture2D" uid="uid://dcgao43wjhtor" path="res://art/characters/knight/jump/0_Hell_Knight_Jump Loop_000.png" id="13_5edq2"]
+[ext_resource type="Texture2D" uid="uid://cwdihee6b1013" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_000.png" id="13_n46re"]
+[ext_resource type="Texture2D" uid="uid://7dljmsxwbe3y" path="res://art/characters/knight/jump/0_Hell_Knight_Jump Loop_001.png" id="14_ktevu"]
+[ext_resource type="Texture2D" uid="uid://bjl1ebkyhtb1w" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_001.png" id="14_optq5"]
+[ext_resource type="Texture2D" uid="uid://qfjo6gwn1dgd" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_002.png" id="15_gqmmf"]
+[ext_resource type="Texture2D" uid="uid://doleym8s7tf8m" path="res://art/characters/knight/jump/0_Hell_Knight_Jump Loop_002.png" id="15_un12q"]
+[ext_resource type="Texture2D" uid="uid://cm8bvc11qhprm" path="res://art/characters/knight/jump/0_Hell_Knight_Jump Loop_003.png" id="16_0lsnr"]
+[ext_resource type="Texture2D" uid="uid://b6xvr6iy4psbl" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_003.png" id="16_fqjho"]
+[ext_resource type="Texture2D" uid="uid://be2qj3lybro0t" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_004.png" id="17_lnvup"]
+[ext_resource type="Texture2D" uid="uid://e86pw08dm1pe" path="res://art/characters/knight/jump/0_Hell_Knight_Jump Loop_004.png" id="17_qf7se"]
+[ext_resource type="Texture2D" uid="uid://q40pc5g6bp2q" path="res://art/characters/knight/jump/0_Hell_Knight_Jump Loop_005.png" id="18_mksnx"]
+[ext_resource type="Texture2D" uid="uid://cqbl10eu3l43b" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_005.png" id="18_wl1wp"]
+[ext_resource type="Texture2D" uid="uid://dvrm7v7o5g4ke" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_000.png" id="19_4jgoi"]
+[ext_resource type="Texture2D" uid="uid://d4im4ru0g5au3" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_006.png" id="19_6qv12"]
+[ext_resource type="Texture2D" uid="uid://1lo14623ubr0" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_001.png" id="20_7jrku"]
+[ext_resource type="Texture2D" uid="uid://c6p1b0kqwtmv3" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_007.png" id="20_wiwkl"]
+[ext_resource type="Texture2D" uid="uid://blnu7qkux4lvi" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_002.png" id="21_h02eg"]
+[ext_resource type="Texture2D" uid="uid://csacj7q70cnl4" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_008.png" id="21_y37jc"]
+[ext_resource type="Texture2D" uid="uid://bcoeg23d1xdn5" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_009.png" id="22_4qjsu"]
+[ext_resource type="Texture2D" uid="uid://6ng2yeqbhw7h" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_003.png" id="22_p821t"]
+[ext_resource type="Texture2D" uid="uid://kxxocigib7m6" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_004.png" id="23_fc5oh"]
+[ext_resource type="Texture2D" uid="uid://c40g4emod6ka2" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_010.png" id="23_w2yys"]
+[ext_resource type="Texture2D" uid="uid://cvkajgkm21bqk" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_005.png" id="24_0p6ul"]
+[ext_resource type="Texture2D" uid="uid://bufjjv7r3p4g5" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_011.png" id="24_ept55"]
+[ext_resource type="Texture2D" uid="uid://cninecgl3gh8l" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_012.png" id="25_mfi3n"]
+[ext_resource type="Texture2D" uid="uid://ommsjvjkf7ji" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_006.png" id="25_wsg0l"]
+[ext_resource type="Texture2D" uid="uid://dishpdhx2vogk" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_013.png" id="26_ebodx"]
+[ext_resource type="Texture2D" uid="uid://ckjuss4gn81et" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_007.png" id="26_kl462"]
+[ext_resource type="Texture2D" uid="uid://bekgb2okyfrq4" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_008.png" id="27_6jt3b"]
+[ext_resource type="Texture2D" uid="uid://cnghk5ibbgi27" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_014.png" id="27_u3ne2"]
+[ext_resource type="Texture2D" uid="uid://ci817aq60hqyq" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_009.png" id="28_c3tjw"]
+[ext_resource type="Texture2D" uid="uid://bmxlr1hkcokgw" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_015.png" id="28_hqhib"]
+[ext_resource type="Texture2D" uid="uid://c7mdcwplhrqkd" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_010.png" id="29_27b31"]
+[ext_resource type="Texture2D" uid="uid://buer4o5a647dg" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_016.png" id="29_upxpc"]
+[ext_resource type="Texture2D" uid="uid://bc5hjplxxbaek" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_011.png" id="30_hxv7h"]
+[ext_resource type="Texture2D" uid="uid://difpfuibpw1qs" path="res://art/characters/knight/idle/0_Hell_Knight_Idle_017.png" id="30_iba4g"]
+[ext_resource type="Texture2D" uid="uid://b5wg1l76pdj7w" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_012.png" id="31_mjyvu"]
+[ext_resource type="Texture2D" uid="uid://dwjhk66ox8e2f" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_013.png" id="32_mfokt"]
+[ext_resource type="Texture2D" uid="uid://dsjyy51tjvjwq" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_014.png" id="33_5k6ab"]
+[ext_resource type="Texture2D" uid="uid://dmuv4ftqkbitu" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_015.png" id="34_30eqg"]
+[ext_resource type="Texture2D" uid="uid://dopfdf5r43jqw" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_016.png" id="35_hahmq"]
+[ext_resource type="Texture2D" uid="uid://cu75167bre2va" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_017.png" id="36_ibrg6"]
+[ext_resource type="Texture2D" uid="uid://b46wh6theug1" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_018.png" id="37_ve3xx"]
+[ext_resource type="Texture2D" uid="uid://badtuff5e5poo" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_019.png" id="38_usgtd"]
+[ext_resource type="Texture2D" uid="uid://c6i0is8yiskib" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_020.png" id="39_3ceb4"]
+[ext_resource type="Texture2D" uid="uid://daterjolog8oo" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_021.png" id="40_bsob8"]
+[ext_resource type="Texture2D" uid="uid://d2a2vk4ec0r5b" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_022.png" id="41_rhxtj"]
+[ext_resource type="Texture2D" uid="uid://c3tx1r6p3a0w1" path="res://art/characters/knight/walk/0_Hell_Knight_Walking_023.png" id="42_ylw5f"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j5saq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ydkti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_45xaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_so74t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_du5xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_56txp")
+}],
+"loop": false,
+"name": &"double_jump_start",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_7a6xe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q48tn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wbjj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_07x5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tw7is")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4vpmy")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_n46re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_optq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gqmmf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fqjho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_lnvup")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wl1wp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_6qv12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_wiwkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_y37jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4qjsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_w2yys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ept55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_mfi3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ebodx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_u3ne2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hqhib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_upxpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_iba4g")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_5edq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ktevu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_un12q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0lsnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qf7se")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_mksnx")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_j5saq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ydkti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_45xaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_so74t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_du5xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_56txp")
+}],
+"loop": false,
+"name": &"jump_start",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_4jgoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_7jrku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_h02eg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_p821t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_fc5oh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_0p6ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wsg0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_kl462")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_6jt3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_c3tjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_27b31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_hxv7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_mjyvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_mfokt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_5k6ab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_30eqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_hahmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ibrg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ve3xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_usgtd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_3ceb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_bsob8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_rhxtj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ylw5f")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 24.0
+}]
